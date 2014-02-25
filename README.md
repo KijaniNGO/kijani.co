@@ -1,4 +1,4 @@
-kijani
+KIJANI
 ======
 
 Kijani Website
