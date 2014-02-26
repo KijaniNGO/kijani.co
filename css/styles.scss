@@ -2,7 +2,14 @@
 
 @import "bourbon/bourbon";
 
+<<<<<<< HEAD
 // $visual-grid: true; $visual-grid-index: front; $visual-grid-color: magenta; $visual-grid-opacity: 0.15;
+=======
+// $visual-grid: true;
+$visual-grid-index: front;
+$visual-grid-color: magenta;
+$visual-grid-opacity: 0.15;
+>>>>>>> 84bfc8f2750e1e0fb12c1af81a0366e7681ff8b0
 // $max-width: em(1280);
 @import "neat/neat";
 
