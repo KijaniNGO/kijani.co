@@ -1,0 +1,137 @@
+@import "reset"
+@import "bourbon/bourbon"
+// $visual-grid: true 
+$visual-grid-index: front 
+$visual-grid-color: magenta 
+$visual-grid-opacity: 0.15
+// $max-width: em(1280)
+@import "neat/neat"
+
+$green: #89b266
+$white: #fff
+$dark: #000
+
+@mixin letterpress($color: #fff)
+	text-shadow: 0.05em 0.05em 0.03em $color
+
+body
+	background: $green url(../img/pattern/greenbokeh.jpg) repeat
+	font-family: "Gaspar" sans-serif
+	font-size: 20px
+	font-weight: 400
+	line-height: 1.2
+
+sup
+	vertical-align: text-top
+	font-size: 70%
+
+p
+	margin-bottom: 0.5em
+
+a
+	color: inherit
+	text-decoration: none
+
+.airy
+	@include fill-parent
+	@include outer-container
+	@include pad()
+	color: $white
+	font-family: "Maven Pro" sans-serif
+	h1, h2
+		text-transform: uppercase
+		text-align: center
+		font-family: "Yummo" sans-serif
+		font-weight: 800
+		font-size: 4em
+		margin-bottom: 0.5em
+	p.slogan
+		font-family: "Yummo" sans-serif
+		font-weight: 400
+		font-size: 1.75em
+		text-align: center
+
+.paper
+	@include fill-parent
+	@include pad()
+	background: $white  url(../img/pattern/paper.jpg) repeat
+	margin: 3em 0
+	box-shadow: 0 3px 3px rgba($dark, 0.05)
+	color: $dark
+	font-family: "Gaspar" sans-serif
+	font-weight: 500
+	@include letterpress
+	h1
+		font-family: "Kaushan Script" sans-serif
+		text-align: center
+		font-weight: 900
+		font-size: 2.4em
+		margin-bottom: 0.5em
+
+#hero
+	.airy
+		aside
+			@include shift(10.5)
+			@include span-columns(1.5)
+			margin-bottom: -20px
+		div
+			@include shift(1)
+			@include span-columns(9)
+			line-height: 1
+			margin-bottom: 3em
+			h1
+				font-size: 8em
+				font-weight: 600
+				text-align: left
+				margin: 0
+				sup
+					font-weight: 900
+			h2
+				font-size: 3.2em
+				font-weight: 900
+				text-align: left
+	.livingroom-container
+		width: 100%
+		text-align: center
+		overflow: hidden
+	#livingroom
+		position: relative
+		left: 100%
+		margin-left: -200%
+		width: 2500px
+	.paper
+		padding: 3em 0 5em 0
+		margin-top: -10px
+
+#about
+	h1
+		@include shift(4)
+		@include span-columns(4)
+	h2
+		@include span-columns(12)
+		text-align: center
+		font-size: 4em
+		font-weight: 100
+	p
+		@include span-columns(12)
+	a
+		font-weight: 800
+		&:hover
+			text-transform: uppercase
+
+
+
+.floating
+	@include span-columns(6)
+	@include outer-container
+	@include pad()
+	img.icon 
+		width: 45%
+		margin-bottom: 0.2em
+
+.right
+	@include shift(6)
+	text-align: right
+
+.center
+	text-align: center
