@@ -11,6 +11,10 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
+	<div id="background"
+	data-0="top: 0vh"
+	data-end="top: -200vh"
+	></div>
 	<header id="hero">
 		<div class="airy">
 			<img src="img/logo.svg" class="logo">
@@ -27,7 +31,7 @@
 		</div>
 		<nav id="nav"
 		data-0="position: static;"
-		data--224-top="position: fixed; top: 0;"
+		data--225-top="position: fixed; top: 0;"
 		data-anchor-target="#nav"
 		>
 			<ul>
@@ -37,17 +41,17 @@
 				<li class="where">       <a href="#where">where</a></li>
 				<li class="who">         <a href="#who">who</a></li>
 				<li class="donate">      <a href="#how">donate</a></li>
-				<li class="tumblr">      <a href="http://">&#xf173;</a></li>
-				<li class="rss">         <a href="http://">&#xf09e;</a></li>
-				<li class="facebook">    <a href="http://">&#xf09a;</a></li>
-				<li class="twitter">     <a href="http://">&#xf099;</a></li>
+				<li class="tumblr">      <a href="http://blog.kijani.co">&#xf173;</a></li>
+				<li class="rss">         <a href="http://blog.kijani.co/rss">&#xf09e;</a></li>
+				<li class="facebook">    <a href="https://facebook.com/kijani.ngo">&#xf09a;</a></li>
+				<li class="twitter">     <a href="https://twitter.com/KijaniNGO">&#xf099;</a></li>
 			</ul>
 		</nav>
 	</header>
 	<section id="what" class="airy">
 		<p>We are young people from around the globe who envision a just and sustainable world and believe that together we can take steps to realize this vision today.</p>
 		<p>Our approach is based on three columns:</p>
-		
+
 	</section>
 	<section id="where" class="paper">
 		WHERE
@@ -64,9 +68,10 @@
 
 <script type="text/javascript" src="js/skrollr.min.js"> </script>
 <script type="text/javascript">
-	// var mobile = window.matchMedia("(max-width: 800px)").matches;
-	// if(!mobile) { var s = skrollr.init({forceHeight:false}) };
-	var s = skrollr.init({forceHeight:false});
+	var s = skrollr.init({
+		forceHeight:false,
+		smoothScrolling:false
+	});
 </script>
 <script type="text/javascript" src="js/jquery.min.js"> </script>
 

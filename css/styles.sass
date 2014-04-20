@@ -26,7 +26,8 @@ $red: #ae6364
 	text-shadow: 0.05em 0.05em 0.03em $color
 
 body
-	background: $green url(../img/pattern/greenbokeh.jpg) repeat
+	background: $dark
+	// background: $green url(../img/pattern/greenbokeh.jpg) repeat
 	background-size: 55em
 	font-family: "Gaspar", sans-serif
 	font-size: 16px
@@ -50,10 +51,8 @@ a
 
 .airy
 	color: $white
-	font-family: "Maven", sans-serif
+	font-family: "Yummo", sans-serif
 	text-align: center
-	h1, h2, h3, h4
-		font-family: "Yummo", sans-serif
 
 .paper
 	background: $white url(../img/pattern/paper.jpg) repeat
@@ -75,6 +74,14 @@ section, header
 	height: 100vh
 	// min-height: 500px
 	position: relative
+
+#background
+	background: $green url(../img/pattern/greenbokeh.jpg) repeat
+	background-size: 55em
+	height: 300vh
+	width: 100%
+	position: fixed
+	top: 0
 
 #hero
 	.airy
@@ -193,7 +200,8 @@ nav
 #what
 	padding-top: 7vh
 	p
-		font-size: 2vw
+		font-size: 2.5vw
+		font-weight: 600
 		width: 45vw
 		margin: 0 auto
 		margin-bottom: 1em
