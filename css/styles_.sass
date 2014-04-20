@@ -1,0 +1,319 @@
+@import "reset"
+@import "bourbon/bourbon"
+
+// @import "visualgrid"
+
+$breakpoint-1: em(1920)
+$breakpoint-2: em(1280)
+$breakpoint-3: em(1088)
+$breakpoint-4: em(700)
+$breakpoint-5: em(520)
+
+@import "neat/neat"
+
+@import "gaspar"
+@import "kaushan"
+@import "maven"
+@import "yummo"
+
+$green: #89b266
+$white: #fff
+$dark: #000
+
+@mixin letterpress($color: #fff)
+	text-shadow: 0.05em 0.05em 0.03em $color
+
+body
+	background: $green url(../img/pattern/greenbokeh.jpg) repeat
+	background-size: 55em
+	font-family: "Gaspar", sans-serif
+	font-size: 20px
+	font-weight: 400
+	line-height: 1.2
+	width: 100%
+	overflow-x: hidden
+	position: relative
+	@include media(max-width $breakpoint-4)
+		font-size: 16px
+	@include media(max-width $breakpoint-5)
+		font-size: 9px
+
+sup
+	vertical-align: text-top
+	font-size: 70%
+
+p
+	margin-bottom: 0.5em
+
+a
+	color: inherit
+	text-decoration: none
+
+section
+	@include outer-container
+
+.hide-overflow-x
+	width: 100%
+	overflow-x: hidden
+
+.airy
+	@include outer-container
+	@include fill-parent
+	@include pad()
+	color: $white
+	font-family: "Maven", sans-serif
+	font-weight: 500
+	text-align: center
+	h1, h2, h3, h4
+		font-family: "Yummo", sans-serif
+	h1, h2
+		text-transform: uppercase
+		text-align: center
+		font-weight: 800
+		font-size: 4em
+		margin-bottom: 0.5em
+	h2
+		font-size: 2em
+	h3, h4
+		font-size: 1.7em
+		text-transform: capitalize
+		margin: 1em 0
+		font-weight: 600
+	p
+		font-size: 1.2em
+	p.slogan
+		font-family: "Yummo", sans-serif
+		font-weight: 600
+		font-size: 1.7em
+
+.paper
+	@include pad()
+	position: relative
+	background: $white url(../img/pattern/paper.jpg) repeat
+	background-size: 32em
+	@include media(min-width $breakpoint-3)
+		background-size: 37em
+	margin: 3em 0
+	box-shadow: 0 3px 3px rgba($dark, 0.05)
+	color: $dark
+	font-family: "Gaspar", sans-serif
+	font-weight: 500
+	@include letterpress
+	h1
+		font-family: "Kaushan", sans-serif
+		font-weight: 500
+		font-size: 1.7em
+		margin-bottom: 0.5em
+		text-transform: capitalize
+
+.map-container
+	@include span-columns(5)
+	margin: 0
+	position: absolute
+	top: 0
+	right: 0
+	#map
+		max-width: 700px
+
+.livingroom-container
+	width: 100%
+	text-align: center
+	overflow: hidden
+	#livingroom
+		position: relative
+		left: 100%
+		margin-left: -200%
+		max-width: 2500px
+		@include media(min-width 1100px)
+			max-width: 3000px
+
+#hero
+	.airy
+		aside
+			@include shift(11)
+			@include span-columns(1)
+			margin-bottom: -20px
+		div
+			@include shift(1)
+			@include span-columns(10)
+			line-height: 1
+			margin-bottom: 3em
+			h1
+				font-size: 11em
+				font-weight: 600
+				text-align: left
+				margin-bottom: -0.05em
+				span
+					font-size: 65%
+					font-weight: 800
+					vertical-align: 0.05em
+					padding-left: 0.05em
+
+			h2
+				font-size: 3.4em
+				font-weight: 800
+				text-align: left
+				margin-left: -0.3em
+	.paper
+		padding: 3em 0 5em 0
+		margin-top: -10px
+		h1
+			font-size: 2.5em
+			text-align: center
+			text-transform: none
+			@include media(min-width 1100px)
+				font-size: 3em
+
+
+#about
+	h1
+		@include shift(4)
+		@include span-columns(4)
+		@include pad
+		margin-bottom: 0
+	h2
+		@include span-columns(12)
+		text-align: center
+		font-size: 4em
+		font-weight: 400
+	p
+		@include span-columns(12)
+	a
+		font-weight: 800
+		&:hover
+			text-transform: uppercase
+
+#who
+	margin-top: 6em
+	position: relative
+	overflow-x: hidden
+	article
+		position: relative
+		left: 10%
+		display: none
+		h2, h3
+			text-align: left
+		h3
+			margin-top: -0.5em
+		.triangle
+			@include triangle(2em, white, up)
+			display: block
+			position: relative
+			left: 7.5%
+			margin-top: 9em
+			@include media(max-width $breakpoint-2)
+				margin-top: 9em
+				left: 10.5%
+			@include media(max-width $breakpoint-3)
+				margin-top: 7.5em
+				left: 13.5%
+			@include media(max-width $breakpoint-4)
+				margin-top: 8em
+				left: 18%
+		p
+			position: relative
+			width: 27em
+			@include media(max-width $breakpoint-4)
+				width: 20em
+			background: $white
+			color: $green
+			text-align: left
+			padding: 0.5em
+			border-radius: 0.5em
+		h4
+			position: relative
+			text-align: left
+			margin-top: 0
+		&.current
+			display: block
+	.portrait-container
+		@include span-columns(12)
+		position: absolute
+		top: 5.5em
+		transition: all 0.2s ease-in-out
+		div
+			width: 250%
+			margin-left: -12.5%
+			@include media(max-width $breakpoint-2)
+				width: 285.7143%
+				margin-left: -14.2857%
+			@include media(max-width $breakpoint-3)
+				width: 333.3333%
+				margin-left: -16.6667%
+			@include media(max-width $breakpoint-4)
+				width: 400%
+				margin-left: -20%
+			position: relative
+			left: 0
+			height: 9em
+			img
+				width: 3.9%
+				border-radius: 100%
+				border: 0.2em solid white
+				float: left
+				margin: 0.5% 0.5%
+				transition: all 0.2s ease-in-out
+				&:hover
+					width: 4.4%
+					margin: 0.25%
+			.focus
+				width: 5%
+				margin: 0 0.5%
+				&:hover
+					width: 5%
+					margin: 0 0.5%
+	.button-container
+		position: absolute
+		left: 6%
+		top: 16em
+		@include media(max-width $breakpoint-3)
+			top: 14.5em
+			left: 3.7%
+		@include media(max-width $breakpoint-4)
+			top: 15.2em
+		.button
+			position: relative
+			font-size: 4em
+			cursor: pointer
+			&#next-statement
+				left: 8.6em
+				@include media(max-width $breakpoint-4)
+					left: 6.35em
+			&:visited
+				box-shadow: none
+
+#where
+	article
+		@include span-columns(7)
+
+
+#what
+	article
+		@include span-columns(6)
+		@include outer-container
+		@include pad()
+	img
+		@include span-columns(4 of 6)
+		@include shift(1)
+		@include pad()
+	p
+		@include pad
+		@include fill-parent
+
+#how
+	margin-bottom: 19em
+	.seedling-container
+		width: 100%
+		float: right
+		padding: 0
+		margin: 0
+		position: absolute
+		bottom: 0
+		right: 0
+		overflow: hidden
+		#seedling
+			max-width: 1500px
+			float: right
+			@include media(max-width $breakpoint-2)
+				margin-right: -20%
+				max-width: 1300px

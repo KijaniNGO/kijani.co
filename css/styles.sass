@@ -15,10 +15,12 @@ $breakpoint-5: em(520)
 @import "kaushan"
 @import "maven"
 @import "yummo"
+@import "kijani-logo"
 
 $green: #89b266
 $white: #fff
 $dark: #000
+$red: #ae6364
 
 @mixin letterpress($color: #fff)
 	text-shadow: 0.05em 0.05em 0.03em $color
@@ -27,68 +29,33 @@ body
 	background: $green url(../img/pattern/greenbokeh.jpg) repeat
 	background-size: 55em
 	font-family: "Gaspar", sans-serif
-	font-size: 20px
+	font-size: 16px
 	font-weight: 400
-	line-height: 1.2
 	width: 100%
 	overflow-x: hidden
 	position: relative
-	@include media(max-width $breakpoint-4)
-		font-size: 16px
-	@include media(max-width $breakpoint-5)
-		font-size: 9px
+	// max-width: 1280px 
 
 sup
 	vertical-align: text-top
 	font-size: 70%
 
 p
-	margin-bottom: 0.5em
+	margin-bottom: 0.6em
+	line-height: 1.2em
 
 a
 	color: inherit
 	text-decoration: none
 
-section
-	@include outer-container
-
-.hide-overflow-x
-	width: 100%
-	overflow-x: hidden
-
 .airy
-	@include outer-container
-	@include fill-parent
-	@include pad()
 	color: $white
 	font-family: "Maven", sans-serif
-	font-weight: 500
 	text-align: center
 	h1, h2, h3, h4
 		font-family: "Yummo", sans-serif
-	h1, h2
-		text-transform: uppercase
-		text-align: center
-		font-weight: 800
-		font-size: 4em
-		margin-bottom: 0.5em
-	h2
-		font-size: 2em
-	h3, h4
-		font-size: 1.7em
-		text-transform: capitalize
-		margin: 1em 0
-		font-weight: 600
-	p
-		font-size: 1.2em
-	p.slogan
-		font-family: "Yummo", sans-serif
-		font-weight: 600
-		font-size: 1.7em
 
 .paper
-	@include pad()
-	position: relative
 	background: $white url(../img/pattern/paper.jpg) repeat
 	background-size: 32em
 	@include media(min-width $breakpoint-3)
@@ -102,218 +69,143 @@ section
 	h1
 		font-family: "Kaushan", sans-serif
 		font-weight: 500
-		font-size: 1.7em
-		margin-bottom: 0.5em
-		text-transform: capitalize
+		font-size: 2em
 
-.map-container
-	@include span-columns(5)
-	margin: 0
-	position: absolute
-	top: 0
-	right: 0
-	#map
-		max-width: 700px
-
-.livingroom-container
-	width: 100%
-	text-align: center
-	overflow: hidden
-	#livingroom
-		position: relative
-		left: 100%
-		margin-left: -200%
-		max-width: 2500px
-		@include media(min-width 1100px)
-			max-width: 3000px
+section, header
+	height: 100vh
+	// min-height: 500px
+	position: relative
 
 #hero
 	.airy
-		aside
-			@include shift(11)
-			@include span-columns(1)
-			margin-bottom: -20px
-		div
-			@include shift(1)
-			@include span-columns(10)
-			line-height: 1
-			margin-bottom: 3em
-			h1
-				font-size: 11em
-				font-weight: 600
-				text-align: left
-				margin-bottom: -0.05em
-				span
-					font-size: 65%
-					font-weight: 800
-					vertical-align: 0.05em
-					padding-left: 0.05em
-					
-			h2
-				font-size: 3.4em
-				font-weight: 800
-				text-align: left
-				margin-left: -0.3em
-	.paper
-		padding: 3em 0 5em 0
-		margin-top: -10px
-		h1
-			font-size: 2.5em
-			text-align: center
-			text-transform: none
-			@include media(min-width 1100px)
-				font-size: 3em
-
-
-#about
-	h1
-		@include shift(4)
-		@include span-columns(4)
-		@include pad
-		margin-bottom: 0
-	h2
-		@include span-columns(12)
-		text-align: center
-		font-size: 4em
-		font-weight: 400
-	p
-		@include span-columns(12)
-	a
-		font-weight: 800
-		&:hover
+		h1 
+			font-size: 8vw
+			font-weight: 600
+			margin-bottom: 0.5em
 			text-transform: uppercase
+			text-align: left
+			margin-top: 4vw
+			margin-left: 6vw
+		h2
+			font-size: 4vw
+			font-weight: 800
+			text-transform: uppercase
+			text-align: right
+			margin-right: 3em
+			margin-top: -0.4em
+			.unit
+				text-transform: none
+				font-size: 1.3em
+				font-weight: 600
+		.logo
+			width: 5vw
+			float: right
+			margin-right: 3vw
+			margin-top: -1vw
+	.livingroom-container
+		width: 100%
+		text-align: center
+		overflow: hidden
+		margin-top: 7vh
+		// position: absolute
+		// bottom: 30vh
+		#livingroom
+			position: relative
+			left: 100%
+			margin-left: -200%
+			max-width: 2000px
+			@include media(min-width 1100px)
+				max-width: 2500px
+	.paper
+		// position: absolute
+		// bottom: 0px
+		margin-top: -4px
+		margin-bottom: -43px
+		height: 27vh
+		width: 100%
+		h1
+			font-size: 4vw
+			text-align: left
+			margin-left: 30vw
+			margin-bottom: 1em
+		h2
+			font-size: 2vw
+			font-style: italic
+			line-height: 1.3
+			margin-left: 20vw
+			&:last-child
+				margin-left: 23vw
 
-#who
-	margin-top: 6em
-	position: relative
-	overflow-x: hidden
-	article
-		position: relative
-		left: 10%
-		display: none
-		h2, h3
-			text-align: left
-		h3
-			margin-top: -0.5em
-		.triangle
-			@include triangle(2em, white, up)
-			display: block
-			position: relative
-			left: 7.5%
-			margin-top: 9em
-			@include media(max-width $breakpoint-2)
-				margin-top: 9em
-				left: 10.5%
-			@include media(max-width $breakpoint-3)
-				margin-top: 7.5em
-				left: 13.5%
-			@include media(max-width $breakpoint-4)
-				margin-top: 8em
-				left: 18%
-		p
-			position: relative
-			width: 27em
-			@include media(max-width $breakpoint-4)
-				width: 20em
-			background: $white
-			color: $green
-			text-align: left
-			padding: 0.5em
-			border-radius: 0.5em
-		h4
-			position: relative
-			text-align: left
-			margin-top: 0
-		&.current
-			display: block
-	.portrait-container
-		@include span-columns(12)
-		position: absolute
-		top: 5.5em
-		transition: all 0.2s ease-in-out
-		div
-			width: 250%
-			margin-left: -12.5%
-			@include media(max-width $breakpoint-2)
-				width: 285.7143%
-				margin-left: -14.2857%
-			@include media(max-width $breakpoint-3)
-				width: 333.3333%
-				margin-left: -16.6667%
-			@include media(max-width $breakpoint-4)
-				width: 400%
-				margin-left: -20%
-			position: relative
-			left: 0
-			height: 9em
-			img
-				width: 3.9%
-				border-radius: 100%
-				border: 0.2em solid white 
-				float: left
-				margin: 0.5% 0.5%
-				transition: all 0.2s ease-in-out
-				&:hover
-					width: 4.4%
-					margin: 0.25%
-			.focus
-				width: 5%
-				margin: 0 0.5%
-				&:hover
-					width: 5%
-					margin: 0 0.5%
-	.button-container
-		position: absolute
-		left: 6%
-		top: 16em
-		@include media(max-width $breakpoint-3)
-			top: 14.5em
-			left: 3.7%
-		@include media(max-width $breakpoint-4)
-			top: 15.2em
-		.button
-			position: relative
-			font-size: 4em
+nav
+	background: $red
+	@include linear-gradient(to center, darken($red, 3%), $red, darken($red, 3%))
+	position: static
+	top: 0
+	height: 48px
+	width: 100%
+	font-family: sans-serif
+	font-weight: 900
+	font-size: 26px
+	text-align: center
+	z-index: 99
+	box-shadow: 0 0 5px 2px rgba(black, 0.3)
+	ul
+		height: 1.8em
+		list-style-type: none
+		li
+			display: inline-block
+			margin-top: -1em
+			height: 100%
+			color: rgba(black, 0.35)
+			padding: 0.4em 0
+			text-shadow: 0 1px 2px rgba(white, 0.15)
+			@include transition (all 0.2s)
 			cursor: pointer
-			&#next-statement
-				left: 8.6em
-				@include media(max-width $breakpoint-4)
-					left: 6.35em
-			&:visited
-				box-shadow: none
-
-#where
-	article
-		@include span-columns(7)
-
+			&:hover
+				color: rgba(black, 0.2)
+		.logo 
+			position: relative
+			margin-right: 6vw
+			div
+				display: inline-block
+				font-size: 3em
+				position: absolute
+				left: 0
+		.blog, .donate
+			font-family: Gaspar
+			font-style: italic
+			border-right: 1px solid rgba(black, 0.15)
+			border-left: 1px solid rgba(black, 0.15)
+			box-shadow: 1px 0 1px rgba(white, 0.1), -1px 0 1px rgba(white, 0.1)
+			margin: 0 6vw
+			padding: 0.4em 6vw
+		.what, .where, .who
+			font-family: Yummo
+			text-transform: uppercase
+			font-size: 0.93em
+		.where
+			padding: 0.4em 2vw
+		.tumblr, .facebook, .twitter, .rss
+			font-family: FontAwesome
+			font-size: 0.85em
+			padding: 0.4em 0.2em
 
 #what
-	article
-		@include span-columns(6)
-		@include outer-container
-		@include pad()
-	img
-		@include span-columns(4 of 6)
-		@include shift(1)
-		@include pad()
+	padding-top: 7vh
 	p
-		@include pad
-		@include fill-parent
+		font-size: 2vw
+		width: 45vw
+		margin: 0 auto
+		margin-bottom: 1em
 
-#how
-	margin-bottom: 19em
-	.seedling-container
-		width: 100%
-		float: right
-		padding: 0
-		margin: 0
-		position: absolute
-		bottom: 0
-		right: 0
-		overflow: hidden
-		#seedling
-			max-width: 1500px
-			float: right
-			@include media(max-width $breakpoint-2)
-				margin-right: -20%
-				max-width: 1300px
+
+footer
+	background: $red
+	@include linear-gradient(to center, darken($red, 6%))
+	height: 80px
+
+#where
+	// margin-top: -40em
+
+
+
