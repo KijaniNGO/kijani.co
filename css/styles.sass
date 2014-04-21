@@ -175,6 +175,7 @@ nav
 			div
 				display: inline-block
 				font-size: 3.4em
+				font-weight: 100
 				position: absolute
 				left: 0
 		.blog, .donate
@@ -202,25 +203,28 @@ nav
 #what
 	padding-top: 10vh
 	.intro
+		height: 30vh
 		p
 			font-size: 2.5vw
 			font-weight: 600
 			width: 45vw
 			margin: 0 auto
-			margin-bottom: 1em
+			margin-bottom: 0.7em
 	.areas
 		width: 90vw
-		margin: 5vh auto
+		height: 55vh
+		margin: 0 auto
 		@include clearfix
 		article
 			width: 30vw
+			height: 55vh
 			position: relative
 			padding: 3vw
 			float: left
 			img
-				width: 80%
 				margin: 0 auto
-				height: 20vh
+				height: 18vh
+				margin-bottom: 1vh
 			h1
 				font-size: 3.5vw
 				font-weight: 600
@@ -230,16 +234,21 @@ nav
 				font-size: 2vw
 				font-weight: 600
 	.more
-		margin-top: 7vh
+		width: 90vw
+		height: 5vh
+		margin: 0 auto
 		p
-			display: block
-			width: 98vw
 			font-size: 0.9em
+			font-weight: 600
 			font-style: italic
-			text-transform: uppercase
+			// text-transform: uppercase
 			text-align: right
+			margin-right: -2vw
 			a:hover
 				text-decoration: underline
+			i
+				font-size: 0.8em
+				padding-left: 0.5em
 
 
 
@@ -257,7 +266,7 @@ nav
 			font-size: 1.6vw
 			width: 60vw
 	.reasons
-		width: 85vw
+		width: 85vwg
 		margin: 5vh auto
 		h2
 			font-size: 1.8vw
