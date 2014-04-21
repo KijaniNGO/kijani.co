@@ -75,6 +75,7 @@ section, header
 	margin: 0
 	// min-height: 500px
 	position: relative
+	overflow-x: hidden
 
 #background
 	background: $green url(../img/pattern/greenbokeh.jpg) repeat
@@ -205,9 +206,9 @@ nav
 	.intro
 		height: 30vh
 		p
-			font-size: 2.5vw
+			font-size: 3.5vh
 			font-weight: 600
-			width: 45vw
+			width: 18em
 			margin: 0 auto
 			margin-bottom: 0.7em
 	.areas
@@ -226,12 +227,15 @@ nav
 				height: 18vh
 				margin-bottom: 1vh
 			h1
-				font-size: 3.5vw
+				font-size: 4.5vh
 				font-weight: 600
 				text-transform: uppercase
 				margin-bottom: 3vh
 			p
-				font-size: 2vw
+				font-size: 2.5vh
+				width: 13em
+				margin: 0 auto
+				font-weight: 600
 				font-weight: 600
 	.more
 		width: 90vw
@@ -266,23 +270,114 @@ nav
 			font-size: 1.6vw
 			width: 60vw
 	.reasons
-		width: 85vwg
+		width: 85vw
 		margin: 5vh auto
 		h2
 			font-size: 1.8vw
 
 #who
-	padding-top: 10vh
+	padding-top: 12vh
 	.intro
 		p
-			font-size: 2.5vw
+			font-size: 3.5vh
 			font-weight: 600
 			text-align: left
+			max-width: 30em
 			width: 75vw
-			margin: 0 auto
+			height: 22vh
+			margin-left: 20vh
 			margin-bottom: 1em
+	.team
+		text-align: left
+		article
+			display: none
+			width: 105vh
+			margin-left: 20vh
+			h2
+				font-size: 4.5vh
+				font-weight: 600
+				text-transform: uppercase
+				margin-bottom: 1vh
+			h3
+				font-size: 2.8vh
+				font-weight: 800
+				text-transform: uppercase
+			.triangle
+				@include triangle(3em, white, up)
+				display: block
+				margin-top: 20vh
+				margin-left: 5.5vh
+			p
+				font-size: 2.5vh
+				font-weight: 800
+				letter-spacing: 0.01em
+				width: 27em
+				background: $white
+				color: $green
+				padding: 0.5em 1em 0.8em 1em
+				margin-left: -1em
+				border-radius: 2vh
+				height: 12vh
+			h4
+				font-size: 2.5vh
+				font-weight: 600
+				margin-top: -0.5vh
+			&.current
+				display: block
+		.portrait-container
+			width: 100%
+			overflow-x: hidden
+			margin-top: -38vh
+			margin-bottom: 0
+			div
+				width: 300vh
+				margin-left: -20vh
+				position: relative
+				left: 0
+				img
+					width: 15vh
+					border-radius: 100%
+					border: 0.3em solid white
+					float: left
+					margin: 2vh
+					@include transition(all 0.1s)
+					&:hover
+						width: 16vh
+						margin: 1.5vh
+				.focus
+					width: 17vh
+					margin: 2vh
+					margin-top: 1vh
+					&:hover
+						width: 17vh
+						margin: 2vh
+						margin-top: 1vh
+		.button-container
+			width: 115vh
+			margin-left: 12.5vh
+			margin-top: 4vh
+			.button
+				width: 3em
+				height: 3em
+				position: relative
+				font-size: 8vh
+				cursor: pointer
+				&#next-statement
+					left: 71vh
+				&:visited
+					box-shadow: none
 
 footer
+	position: relative
 	background: $red
 	@include linear-gradient(to center, darken($red, 6%))
-	height: 80px
+	box-shadow: inset 0 4px 3px rgba(black, 0.2)
+	padding: 1em
+	font-family: Yummo
+	font-weight: 800
+	text-transform: uppercase
+	text-align: right
+	color: rgba(black, 0.35)
+	text-shadow: 0 1px 2px rgba(white, 0.15)
+	a:hover
+		color: rgba(black, 0.2)
