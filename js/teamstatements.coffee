@@ -90,7 +90,6 @@ $(document).ready ->
 				id_nums = [id_focus_num...id_this_num]
 			else 
 				id_nums = [id_focus_num..10].concat([0...id_this_num])
-			console.log(id_nums)
 			for id_num in id_nums
 				$('#portraits').append(imgs[nextimg(id_num)])
 				$('#portraits').children().first().remove()

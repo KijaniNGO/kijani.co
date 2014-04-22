@@ -120,7 +120,6 @@ $(document).ready(function() {
           return _results1;
         }).apply(this));
       }
-      console.log(id_nums);
       _results3 = [];
       for (_l = 0, _len = id_nums.length; _l < _len; _l++) {
         id_num = id_nums[_l];
