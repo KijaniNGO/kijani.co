@@ -44,7 +44,7 @@
 				<li class="donate">      <a href="#donate">donate</a></li>
 				<li class="tumblr">      <a href="http://blog.kijani.co"><i>&#xf173;</i></a></li>
 				<li class="rss">         <a href="http://blog.kijani.co/rss"><i>&#xf09e;</i></a></li>
-				<li class="mailing">     <a href="mail"><i style="font-size: 0.75em; vertical-align: 0.1em">&#xf0e0;</i></a></li>
+				<li class="newsletter">  <a href="mail"><i style="font-size: 0.75em; vertical-align: 0.1em">&#xf0e0;</i></a></li>
 				<li class="facebook">    <a href="https://facebook.com/kijani.ngo"><i>&#xf09a;</i></a></li>
 				<li class="twitter">     <a href="https://twitter.com/KijaniNGO"><i>&#xf099;</i></a></li>
 			</ul>
@@ -77,16 +77,32 @@
 		</div>
 	</section>
 	<section id="where" class="paper">
+		<div class="map-container">
+			<img id="map" src="img/sketch/map.svg">
+		</div>
 		<div class="story">
-			<h1>Marmanet acts as a microcosm <br>to understand the importance of sustainability.</h1>
+			<h1>Marmanet acts as a microcosm to <br>understand the importance of sustainability.</h1>
 			<p>Nested in the central highlands of Kenya, lies the Marmanet forest.</p>
 			<p>50 years ago, the forest covered 40,000 hectares. Fast forward half a century, and over 90% of the forest has disappeared, and the local economy has collapsed. High unemployment and poverty is complemented by a loss of biodiversity and seasonal drought.</p>
 			<p>This is where our project is based. We understand that humans are part and parcel of a forest ecosystem. Therefore our goal is not only to plant trees but to foster the sustainable development of this and other rural areas.</p>
 		</div>
-		<div class="reasons">
+		<div class="reasons" id="reasons">
 			<h2>Learn about the importance of the Kenyan highland forests:</h2>
-			<article>
-				
+			<div class="tabs">
+				<ul id="reason-tabs">
+					<li id="waterprovision" class="focus">Waterprovision</li>
+					<li id="biodiversity">Biodiversity</li>
+					<li id="livelihood">Livelihoods</li>
+				</ul>
+			</div>
+			<article id="waterprovision-text" class="selected">
+				<p>The highland forests of Kenya contain what are known as water towers. These water towers – Mt. Kenya, the Aberdares, Chergani Hills, Mt. Elgon and Mau complex and its outlying forests (where our project is based) – act are vital to “catch” rainfall and supply the rivers and lakes that are a lifeline for the East Africa region, such as Lake Victoria, with water. These forests are necessary for regular rainfall and to prevent water-related conflicts among the millions of farmers and pastoralists that rely on water for their livelihoods.</p>
+			</article>
+			<article id="biodiversity-text">
+				<p>The</p>
+			</article>
+			<article id="livelihood-text">
+				<p>The tea and tourism industries, the two largest earners of foreign currency in Kenya, depend on these forests. The climatic conditions necessary for optimal tea-leaf growth are found in areas adjacent to highland forests. The tourism industry relies on the availability of water for the diverse wildlife found in Kenya’s national parks, forests and reserves. Hydroelectricity, accounting for almost 50% of Kenya’s electricity needs, depends on major rivers such as the Tana River.</p>
 			</article>
 		</div>
 	</section>
@@ -194,7 +210,17 @@
 		</div>
 	</section>
 	<section id="donate" class="paper">
-		DONATE
+		<div class="seedling-container">
+			<img id="seedling" src="img/sketch/seedling.svg">
+		</div>
+		<div class="text">
+			<h1>We need your support now to move on</h1>
+			<p>Nullam at euismod dolor. Ut dictum lacus ante, vitae suscipit ligula consequat in. Nam ultricies, quam pharetra tempor ornare, odio risus consequat neque, id ultricies ante mauris eu justo. Vivamus euismod sollicitudin eros fringilla tincidunt. Pellentesque interdum adipiscing mauris. Nam lacus enim, sodales a turpis eget, hendrerit accumsan quam. Ut quis adipiscing metus. Nullam et tristique risus. Sed a velit nisl. Donec fermentum nunc augue, sit amet sollicitudin felis tincidunt et. Maecenas a metus dignissim, ornare purus a, dapibus nunc. Pellentesque sed porttitor mauris. Fusce malesuada arcu ipsum, rutrum molestie nibh ornare at. In eu accumsan ipsum. Nulla cursus tincidunt odio at egestas.</p>
+		</div>
+		<div class="button-container">
+			<a class="button" href="donate">support us now</a><br>
+			<a class="button" href="newsletter">get our updates</a>
+		</div>
 	</section>
 	<footer>
 		<div class="left">
@@ -206,10 +232,10 @@
 		</dic>
 		<div class="right">
 			<a href="http://blog.kijani.co">blog</a> - 
+			<a href="newsletter">newsletter</a> - 
 			<a href="http://blog.kijani.co/rss">rss</a> - 
 			<a href="https://facebook.com/kijani.ngo">facebook</a> - 
-			<a href="https://twitter.com/KijaniNGO">twitter</a> - 
-			<a href="mailing">mailing list</a>
+			<a href="https://twitter.com/KijaniNGO">twitter</a>
 		</div>
 	</footer>
 
@@ -223,6 +249,7 @@
 	</script>
 	<script type="text/javascript" src="js/jquery.min.js"> </script>
 	<script src="js/teamstatements.js"></script>
+	<script src="js/reasons.js"></script>
 	<!-- /SCRIPTS -->
 </body>
 </html>
