@@ -139,7 +139,7 @@ section, header
 		height: 50vh
 		h1
 			font-size: 2em
-			text-indent: -2vw
+			text-indent: -0.3em
 			line-height: 1.3
 			margin-bottom: 3vh
 		p
@@ -162,7 +162,6 @@ section, header
 			text-transform: uppercase
 			ul
 				list-style-type: none
-				margin-right: 2.5vw
 				li
 					display: inline-block
 					color: $red
@@ -282,6 +281,7 @@ section, header
 	.seedling-container
 		position: absolute
 		width: 90vw
+		max-width: 140vh
 		bottom: 45px
 		right: -10vw
 		#seedling
@@ -289,20 +289,28 @@ section, header
 	.text
 		margin-top: 10vh
 		margin-left: 7vw
-		height: 50vh
+		min-height: 50vh
 		font-size: 1.7vw
 		@media (min-width: 1400px)
 			font-size: 24px
 		h1
 			font-size: 2em
+			text-indent: -0.3em
 			line-height: 1.3
 			margin-bottom: 3vh
 		p
 			font-size: 1em
 			width: 80vw
+			@media (min-width: 1400px)
+				&:last-child
+					width: 44vw
+		a
+			&:hover
+				color: $red
+				font-weight: bold
 	.button-container
-		margin-top: 2vh
-		margin-left: 7vw
+		margin-top: 5vh
+		margin-left: 9vw
 		font-size: 1.7vw
 		@media (min-width: 1400px)
 			font-size: 24px
@@ -320,6 +328,8 @@ section, header
 			margin-bottom: 1em
 			width: 8.5em
 			text-align: center
+			position: relative
+			z-index: 99
 			&:hover
 				background: $red
 				color: $gray
