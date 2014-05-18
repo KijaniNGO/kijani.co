@@ -3,8 +3,13 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 700 612 92" enable-background="new 0 700 612 92" xml:space="preserve">
+<defs>
+	<pattern id="paper" patternUnits="userSpaceOnUse" width="140" height="140">
+		<image xlink:href="../pattern/paper.jpg" x="0" y="0" width="140" height="140" />
+	</pattern>
+</defs>
 <g id="Layer_22_xA0_Image_1_">
-	<path fill="#DEDEDE" d="M612,723.564c-0.104,0.106-0.211,0.203-0.329,0.285c-1.088,0.759-2.24,1.426-3.367,2.129
+	<path fill="url(#paper)" d="M612,723.564c-0.104,0.106-0.211,0.203-0.329,0.285c-1.088,0.759-2.24,1.426-3.367,2.129
 		c-0.716,0.446-1.525,0.59-2.34,0.705c-0.333,0.047-0.614-0.017-0.774-0.388c-0.316-0.74-0.738-1.448-1-2.201
 		c-0.038,0.528-0.093,1.055-0.252,1.547c-0.476,1.468-0.988,2.951-2.005,4.171c-0.283,0.34-0.584,0.667-1.079,0.756
 		c-0.29-0.894-0.568-1.75-0.846-2.606c-0.239,0.731-0.486,1.458-0.498,2.188c-0.018,1.109-0.262,2.144-0.611,3.179
