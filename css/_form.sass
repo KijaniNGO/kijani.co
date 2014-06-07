@@ -1,0 +1,53 @@
+form
+	max-width: 600px
+	width: 100%
+	margin: 0 auto
+	padding-top: 5em
+	font-size: 25px
+	.inputs
+		margin: 2em 0 1em 1em
+		label
+			width: 20em
+			cursor: pointer
+			font-style: italic
+		input
+			-webkit-appearance: none
+			background: none
+			border: none
+			border: .05em solid black
+			border-radius: .5em
+			padding: .1em .3em
+			width: 10em
+			font-family: "Gaspar", "Yummo", sans-serif
+			font-size: 25px
+			text-shadow: 0.05em 0.05em 0.03em white
+			box-shadow: 0.03em 0.03em 0.03em white
+			&:focus
+				-webkit-appearance: none
+				outline: none
+				border-radius: .5em
+				box-shadow: 0.03em 0.03em 0.03em white, inset 0 0 .1em .05em $red
+	input[type='submit']
+		background: none
+		float: right
+		display: inline-block
+		color: $red
+		font-family: Yummo
+		font-size: 1em
+		font-weight: 800
+		border-radius: 0.5em
+		text-transform: uppercase
+		border: solid $red 0.15em
+		box-shadow: 0.03em 0.03em 0.03em white
+		padding: 0 0 0.25em 0 !important
+		margin-right: 2em !important
+		width: 6.5em
+		text-align: center
+		position: relative
+		z-index: 99
+		cursor: pointer
+		&:hover, &:focus
+			background: $red
+			color: $gray
+			text-shadow: none
+			outline: none
