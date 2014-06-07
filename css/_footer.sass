@@ -1,0 +1,33 @@
+footer
+	position: relative
+	height: 48px
+	margin-top: -48px
+	background: $red
+	@include linear-gradient(to center, darken($red, 6%))
+	box-shadow: inset 0 4px 3px rgba(black, 0.2)
+	padding: 1em
+	color: rgba(black, 0.35)
+	text-shadow: 0 1px 2px rgba(white, 0.15)
+	.left, .center
+		font-family: Gaspar
+		font-weight: bold
+		font-style: italic
+		display: inline-block
+	.left
+		width: 40%
+		text-align: left
+		float: left
+	.center
+		width: 20%
+		text-align: center
+		float: left
+	.right
+		font-family: Yummo
+		font-weight: 800
+		text-transform: uppercase
+		display: inline-block
+		width: 40%
+		text-align: right
+		float: left
+	a:hover
+		color: rgba(black, 0.2)

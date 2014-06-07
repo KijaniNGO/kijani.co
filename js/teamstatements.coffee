@@ -1,5 +1,5 @@
-imgs = ['<img src="img/portrait/armin.jpg" id="armin">', '<img src="img/portrait/daniel.jpg" id="daniel">', '<img src="img/portrait/dave.jpg" id="dave">', '<img src="img/portrait/david.jpg" id="david">', '<img src="img/portrait/jannis.jpg" id="jannis">', '<img src="img/portrait/dickens.jpg" id="dickens"> ', '<img src="img/portrait/tobias.jpg" id="tobias">', '<img src="img/portrait/haron.jpg" id="haron">', '<img src="img/portrait/urs.jpg" id="urs">', '<img src="img/portrait/liz.jpg" id="liz">', '<img src="img/portrait/zach.jpg" id="zach">']
-position = 
+imgs = ['<img src="../img/portrait/armin.jpg" id="armin">', '<img src="../img/portrait/daniel.jpg" id="daniel">', '<img src="../img/portrait/dave.jpg" id="dave">', '<img src="../img/portrait/david.jpg" id="david">', '<img src="../img/portrait/jannis.jpg" id="jannis">', '<img src="../img/portrait/dickens.jpg" id="dickens"> ', '<img src="../img/portrait/tobias.jpg" id="tobias">', '<img src="../img/portrait/haron.jpg" id="haron">', '<img src="../img/portrait/urs.jpg" id="urs">', '<img src="../img/portrait/liz.jpg" id="liz">', '<img src="../img/portrait/zach.jpg" id="zach">']
+position =
 	"armin" : 0
 	"daniel" : 1
 	"dave" : 2
@@ -12,7 +12,7 @@ position =
 	"liz" : 9
 	"zach" : 10
 
-name = 
+name =
 	0 : "armin"
 	1 : "daniel"
 	2 : "dave"
@@ -61,7 +61,7 @@ $(document).ready ->
 		id = $('#portraits').find('.focus').attr('id')
 		if position[id] == 0
 			current.removeClass('current').parent().children('article').last().addClass('current')
-		else 
+		else
 			current.removeClass('current').prev().addClass('current')
 
 		$('#portraits').prepend(imgs[previmg(position[id])])
@@ -76,7 +76,7 @@ $(document).ready ->
 
 		if (id_delta == -1 || id_delta == 10)
 			current.removeClass('current').parent().find('#'+id_this+'-statement').addClass('current')
-			
+
 			$('#portraits').prepend(imgs[previmg(position[id_focus])])
 			$('#portraits').children().last().remove()
 
@@ -88,7 +88,7 @@ $(document).ready ->
 			id_focus_num = position[id_focus]
 			if id_this_num > id_focus_num
 				id_nums = [id_focus_num...id_this_num]
-			else 
+			else
 				id_nums = [id_focus_num..10].concat([0...id_this_num])
 			for id_num in id_nums
 				$('#portraits').append(imgs[nextimg(id_num)])

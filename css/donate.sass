@@ -25,16 +25,41 @@ $gray: #dedede
 
 @import "nav"
 @import "footer"
-@import "home"
+
+nav
+	position: fixed
+	margin-top: 0px
+	.logo
+		position: absolute
+		div
+			margin-top: 14px
+
+#details
+	margin-top: 100px
+	h1
+		font-size: 50px
+	p
+		width: 95%
+		margin: 0 auto
+		margin-top: 1em
+		max-width: 30em
+		font-size: 25px
+
+#betterplace
+	margin: 0 auto
+	width: 600px
+	margin-bottom: 50px
+	min-height: 90vh
+	padding-top: 50px
 
 @mixin letterpress($color: #fff)
 	text-shadow: 0.05em 0.05em 0.03em $color
 
 body
 	background: $dark
-	// background: $green url(../img/pattern/greenbokeh.jpg) repeat
+	background: $green url(../img/pattern/greenbokeh.jpg) repeat
 	background-size: 55em
-	font-family: "Gaspar", "Yummo", sans-serif
+	font-family: "Gaspar", sans-serif
 	font-size: 16px
 	font-weight: 400
 	width: 100%
@@ -74,7 +99,7 @@ i
 		background-size: 37em
 	box-shadow: 0 3px 3px rgba($dark, 0.05)
 	color: $dark
-	font-family: "Gaspar", "Yummo", sans-serif
+	font-family: "Gaspar", sans-serif
 	font-weight: 500
 	@include letterpress
 	h1
