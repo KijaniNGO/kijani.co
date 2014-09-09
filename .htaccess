@@ -1,16 +1,6 @@
 # No File Extensions
-Options +FollowSymlinks
-RewriteEngine On
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.+)$ /$1.php [L,QSA]
 
-RewriteMap insensitive tolower:
-RewriteRule ^[\/]*(.*)$ /${insensitive:$1} [R,L]
-
-Redirect 500 /CCL/ http://kijani.co/ccl/
+Redirect /CCL/ http://kijani.co/ccl/
 
 # Gzip
 <ifmodule mod_deflate.c>
