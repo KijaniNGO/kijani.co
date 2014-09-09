@@ -1,6 +1,9 @@
 # No File Extensions
 
-Redirect /CCL/ http://kijani.co/ccl/
+Redirect /CCL http://climatecolab.org/web/guest/plans/-/plans/contestId/1300205/planId/1309102
+Redirect /ccl http://climatecolab.org/web/guest/plans/-/plans/contestId/1300205/planId/1309102
+Redirect /CCL/ http://climatecolab.org/web/guest/plans/-/plans/contestId/1300205/planId/1309102
+Redirect /ccl/ http://climatecolab.org/web/guest/plans/-/plans/contestId/1300205/planId/1309102
 
 # Gzip
 <ifmodule mod_deflate.c>
