@@ -10,7 +10,7 @@ RewriteRule ^(.+)$ /$1.php [L,QSA]
 RewriteMap insensitive tolower:
 RewriteRule ^[\/]*(.*)$ /${insensitive:$1} [R,L]
 
-Redirect 301 /CCL/ http://kijani.co/ccl/
+Redirect 500 /CCL/ http://kijani.co/ccl/
 
 # Gzip
 <ifmodule mod_deflate.c>
