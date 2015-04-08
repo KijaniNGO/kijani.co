@@ -5,6 +5,8 @@ Redirect /ccl http://climatecolab.org/web/guest/plans/-/plans/contestId/1300205/
 Redirect /CCL/ http://climatecolab.org/web/guest/plans/-/plans/contestId/1300205/planId/1309102
 Redirect /ccl/ http://climatecolab.org/web/guest/plans/-/plans/contestId/1300205/planId/1309102
 
+Redirect /qr/ http://blog.kijani.co
+
 # Gzip
 <ifmodule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript
