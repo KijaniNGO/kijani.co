@@ -43,6 +43,7 @@
 ?>
 
 <svg
+	style="position:absolute; top:0; left:0;"
 	version="1.1"
 	width="<?php echo $width ?>"
 	height="<?php echo $width*450/800 ?>"
@@ -51,6 +52,13 @@
 >
 
 <defs>
+	<style type="text/css">
+		@font-face {
+			font-family: bree;
+			src: url(bree.otf);
+			font-weight: bold;
+			}
+	</style>
 	<filter id="grayscale">
 		<feColorMatrix type="saturate" values="0"/>
 	</filter>
@@ -91,7 +99,7 @@
 
 	<text
 		x="0" y="0"
-		font-family="Bree"
+		font-family="bree"
 		font-weight="bold"
 		font-size="<?php echo font_size($title) ?>"
 		fill="#f8f9f7"
@@ -102,7 +110,3 @@
 </g>
 
 </svg>
-
-
-<!-- <script src="//use.typekit.net/ndr8xkb.js"></script>
-<script>try{Typekit.load();}catch(e){}</script> -->
