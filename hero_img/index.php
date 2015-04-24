@@ -54,8 +54,8 @@
 <defs>
 	<style type="text/css">
 		@font-face {
-			font-family: bree;
-			src: url(bree.otf);
+			font-family: title;
+			src: url(f.otf);
 			font-weight: bold;
 			}
 	</style>
@@ -99,7 +99,7 @@
 
 	<text
 		x="0" y="0"
-		font-family="bree"
+		font-family="title"
 		font-weight="bold"
 		font-size="<?php echo font_size($title) ?>"
 		fill="#f8f9f7"
