@@ -8,5 +8,5 @@
 	$type = "jpg";
 	$quality = 80;
 
-	echo "<img src='http://kijani.co/hero_img/img.php?imgurl={$image_url}&title={$title}&width={$width}&type={$type}&qual={$quality}'>"
+	echo "<img src='http://kijani.co/imagerenderer/img.php?imgurl={$image_url}&title={$title}&width={$width}&type={$type}&qual={$quality}'>"
  ?>
