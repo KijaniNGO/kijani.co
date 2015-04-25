@@ -6,6 +6,7 @@
 	// $title = urlencode('Stuck in the Mud');
 	$width = 500;
 	$type = "png";
+	$quality = 80;
 
-	echo "<img src='http://kijani.co/hero_img/{$type}.php?img={$image_url}&title={$title}&width={$width}'>"
+	echo "<img src='http://kijani.co/hero_img/img.php?img={$image_url}&title={$title}&width={$width}&type={$type}&qual={$quality}'>"
  ?>
