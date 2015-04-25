@@ -3,10 +3,10 @@
 	$title = htmlentities(urldecode($_GET["title"]));
 	$image_url = urldecode($_GET["img"]);
 	$width = intval($_GET["width"]);
-	$width = $width == 0 ? 800 : $width;
+	$width = $width == 0 ? 1000 : $width;
 
 	function font_size($title) {
-		$title_len = strlen(utf8_decode(html_entity_decode($title, ENT_COMPAT, 'utf-8')));
+		$title_len = strlen(utf8_decode(html_entity_decode($title)));
 		if ( $title_len <= 19) { $font_size = 90; }
 		else if ( $title_len <= 38) { $font_size = 80; }
 		else if ( $title_len <= 45) { $font_size = 70; }
@@ -15,17 +15,17 @@
 	}
 
 	function title_tspan($title) {
-		$title_len = strlen(utf8_decode(html_entity_decode($title, ENT_COMPAT, 'utf-8')));
+		$title_len = strlen(utf8_decode(html_entity_decode($title)));
 		$font_size = font_size($title);
 		if ( $title_len > 20 ) {
 			$y_position = 450-1.5*$font_size;
 			$letter_padding = (800/(0.55*$font_size) - $title_len/2);
 			if ( $letter_padding >= 1 ) {
 				$out = "<tspan y=\"{$y_position}\" x=\"400\" text-anchor=\"middle\" width=\"{$letter_padding}\" > ";
-				$out .= wordwrap($title, $title_len/(1.8 / pow($letter_padding, 1/6)), "</tspan><tspan dy=\"{$font_size}\" x=\"400\" text-anchor=\"middle\" >");
+				$out .= wordwrap($title, strlen($title)/(1.7/pow($letter_padding, 1/6)), "</tspan><tspan dy=\"{$font_size}\" x=\"400\" text-anchor=\"middle\" >");
 			} else {
 				$out = "<tspan y=\"{$y_position}\" x=\"20\" >";
-				$out .= wordwrap($title, $title_len/1.65, "</tspan><tspan dy=\"{$font_size}\" x=\"780\" text-anchor=\"end\" >");
+				$out .= wordwrap($title, strlen($title)/1.65, "</tspan><tspan dy=\"{$font_size}\" x=\"780\" text-anchor=\"end\" >");
 			}
 			$out .= '</tspan>';
 			return $out;
