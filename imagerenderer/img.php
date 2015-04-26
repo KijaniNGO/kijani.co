@@ -11,7 +11,7 @@
 	$filetype = ($filetype == 'jpg' || $filetype == 'png') ? $filetype : 'jpg';
 
 	// filename from unique hash
-	$path = "http://kijani.co/hero_img/svg.php?img={$image_url}&title={$title}&width={$width}";
+	$path = "http://kijani.co/imagerenderer/svg.php?img={$image_url}&title={$title}&width={$width}";
 	$filename = 'cache/' . hash("md5", $path.$quality) . '.' . $filetype;
 
 	// create image from svg, if needed
