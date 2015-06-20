@@ -1,6 +1,6 @@
 tutorials/*
 .DS_Store
-*/.DS_Store
+.DS_Store
 */f.otf
 */cache/*
 */phantomjs

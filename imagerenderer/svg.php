@@ -1,6 +1,6 @@
 <?php
 
-	$title = htmlentities(urldecode($_GET["title"]));
+	$title = htmlentities(html_entity_decode(urldecode($_GET["title"])));
 	$image_url = urldecode($_GET["img"]);
 	$width = intval($_GET["width"]);
 	$width = $width == 0 ? 1000 : $width;
