@@ -1,5 +1,5 @@
 <?php
-	// get imgage url, title, and width
+	// get image url, title, and width
 	$title = urlencode(urldecode($_GET["title"]));
 	$image_url = $_GET["imgurl"];
 	$width = $_GET["width"];
