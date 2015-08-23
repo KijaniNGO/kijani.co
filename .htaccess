@@ -5,6 +5,10 @@ Redirect /ccl http://climatecolab.org/web/guest/plans/-/plans/contestId/1300205/
 Redirect /CCL/ http://climatecolab.org/web/guest/plans/-/plans/contestId/1300205/planId/1309102
 Redirect /ccl/ http://climatecolab.org/web/guest/plans/-/plans/contestId/1300205/planId/1309102
 Redirect /qr http://blog.kijani.co
+Redirect /totebag http://www.amazon.com/gp/product/B014AKMA58/
+Redirect /totebags http://www.amazon.com/gp/product/B014AKMA58/
+Redirect /accounting https://docs.google.com/spreadsheets/d/1C1SYbmf01TsnHqzXZlaJewcMD248sBkdV9A82NYLNlQ
+Redirect /newsletter http://eepurl.com/3g5dr
 
 # Gzip
 <ifmodule mod_deflate.c>
