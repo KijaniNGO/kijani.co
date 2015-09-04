@@ -11,7 +11,7 @@ Redirect /accounting https://docs.google.com/spreadsheets/d/1C1SYbmf01TsnHqzXZla
 Redirect /newsletter http://eepurl.com/3g5dr
 Redirect /soa_paypal https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AX9WGWWBBN3S2
 Redirect /styleguide https://app.frontify.com/d/wMWXTshZOlRE
-Redirect /pdf https://kijani.ngo/docs/Kijani%20Project%20Description%20v4.pdf
+Redirect /pdf http://kijani.ngo/docs/Kijani%20Project%20Description%20v4.pdf
 
 # Gzip
 <ifmodule mod_deflate.c>
