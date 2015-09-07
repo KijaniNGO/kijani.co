@@ -12,6 +12,7 @@ Redirect /newsletter http://eepurl.com/3g5dr
 Redirect /soa_paypal https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AX9WGWWBBN3S2
 Redirect /styleguide https://app.frontify.com/d/wMWXTshZOlRE
 Redirect /pdf http://kijani.ngo/docs/Kijani%20Project%20Description%20v4.pdf
+Redirect /support-us http://kijani.ngo/docs/supportletter2015.pdf
 
 # Gzip
 <ifmodule mod_deflate.c>
