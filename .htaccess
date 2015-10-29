@@ -9,6 +9,7 @@ Redirect /totebag http://www.amazon.com/Natural-Reusable-Eco-Tote-Bag/dp/B014AKM
 Redirect /totebags http://kijani.ngo/totebag
 Redirect /accounting https://docs.google.com/spreadsheets/d/1C1SYbmf01TsnHqzXZlaJewcMD248sBkdV9A82NYLNlQ
 Redirect /newsletter http://eepurl.com/3g5dr
+Redirect /newsletter/archive http://us8.campaign-archive1.com/home/?u=7615375b5b079dcf23385adbe&id=3a825f2e8c
 Redirect /soa_paypal https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AX9WGWWBBN3S2
 Redirect /styleguide https://app.frontify.com/d/wMWXTshZOlRE
 Redirect /pdf http://kijani.ngo/docs/Kijani%20Project%20Description%20v4.pdf
