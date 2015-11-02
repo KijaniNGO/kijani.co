@@ -14,6 +14,7 @@ Redirect /soa_paypal https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_
 Redirect /styleguide https://app.frontify.com/d/wMWXTshZOlRE
 Redirect /pdf http://kijani.ngo/docs/Kijani%20Project%20Description%20v4.pdf
 Redirect /support-us http://kijani.ngo/docs/supportletter2015.pdf
+Redirect /photocircle https://www.photocircle.net/eu/social-projects/forests-kenya
 
 # Gzip
 <ifmodule mod_deflate.c>
